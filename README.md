@@ -21,12 +21,12 @@ In the short term, our success criteria is to increase product sales by 20% and 
 ### Inventory of resources
 ### Personnel:
 We have a diverse team of six well-rounded individuals who possess strong business understanding. Each person brings unique value to the project. 
-Alena: Has experience using CRISP-DM and is the project owner responsible for the overall project planning.
-Rana: Has deep marketing understanding, fluent in Norwegian language, and has connections with individuals in Norway (possibly with the CEO of reMarkable).
-Krissy: Has strong marketing understanding and an understanding of US local markets.
-Oliver: Is a data mining expert and has strong presentation skills.
-Daniel: Has extensive work experience in business.
-Arshak: Is a data mining expert.
+* Alena: Has experience using CRISP-DM and is the project owner responsible for the overall project planning.
+* Rana: Has deep marketing understanding, fluent in Norwegian language, and has connections with individuals in Norway (possibly with the CEO of reMarkable).
+* Krissy: Has strong marketing understanding and an understanding of US local markets.
+* Oliver: Is a data mining expert and has strong presentation skills.
+* Daniel: Has extensive work experience in business.
+* Arshak: Is a data mining expert.
 We also are privileged to have four LMU professors actively helping us in the process.
  
 ### Data:
@@ -126,21 +126,24 @@ Another criteria is making sure that we are able to properly create an STP model
 
 In order to complete our desired goals for this project, we decided to utilize Agile methodologies to assist with project management. Specifically, we will be using Trello to assign tasks to ensure we hit our various sprint goals as well as to keep all project related material in one place. Furthermore, we will use WhatsApp for any necessary quick and instant messaging. Lastly, the team has agreed to have a weekly meeting every Tuesday at 5:00 P.M. until the completion of our project, so that we can communicate where everyone is with their assigned tasks and keep the team on the same page at various points throughout the project. Down below is more information on the specifics of each Sprint and how we plan to reach these various milestones.
 
-Sprint 0: Project Proposal (Expected Completion Date: 03/15/2022)
+* Sprint 0: Project Proposal (Expected Completion Date: 03/15/2022)
+	
 	Deliverables: 
 Project proposal
 Job post
 
 This Sprint has been completed and a GitHub Repository for the project has been created.
 
-Sprint 1: Business Understanding (Expected Completion Date: 03/29/2022)
+* Sprint 1: Business Understanding (Expected Completion Date: 03/29/2022)
+	
 	Deliverables: 
 Documented CRISP-DM Business Understanding Tasks and Outputs
 Create and Update Trello Board
 
 In order to complete this sprint all team members must first create Trello accounts, so that all members have access to a central Trello board for this project. Additionally, a meeting will be necessary to breakdown and discuss specific tasks that need to be done to complete Business Understanding CRISP-DM documentation.
 
-Sprint 2: Data Understanding (Expected Completion Date: 04/12/2022)
+* Sprint 2: Data Understanding (Expected Completion Date: 04/12/2022)
+	
 	Deliverables: 
 Documented CRISP-DM Data Understanding Tasks and Outputs
 Data Collection Jupyter Notebook (data_collection.ipynb)
@@ -150,7 +153,8 @@ Update Trello Board
 As we plan to analyze User Generated Content from Twitter, we plan to use Jupyter Notebooks and a simple Twitter API calls to extract the data (tweets) that will be necessary for the project. Additionally, a meeting will be necessary to breakdown and discuss the specific tasks that need to be done to complete Data Understanding CRISP-DM documentation.
 
 
-Sprint 3: Data Preparation, Modeling, Evaluation (Expected Completion Date: 04/26/2022)
+* Sprint 3: Data Preparation, Modeling, Evaluation (Expected Completion Date: 04/26/2022)
+	
 	Deliverables:
 Documented CRISP-DM Data Preparation, Modeling, and Evaluation Tasks and Outputs
 Data Preparation Jupyter Notebook (data_preparation.ipynb)
@@ -163,7 +167,8 @@ For Sprint 3, we will continue to utilize Jupyter Notebooks for both prepping ou
 
 This workload may seem unachievable for one Sprint, but with the BERT model already available to us, this will likely be possible to complete in a timely manner. Lastly, a meeting will be necessary to breakdown and discuss the specific tasks that need to be done to complete Data Preparation, Modeling, and Evaluation CRISP-DM documentation.
 
-Sprint 4: Deployment (Expected Completion Date: 05/06/2022)
+* Sprint 4: Deployment (Expected Completion Date: 05/06/2022)
+	
 	Deliverables:
 Documented CRISP-DM Deployment Tasks and Outputs
 Dashboards
