@@ -1,4 +1,5 @@
 # bsan-6080-reMarkable
+![alt text](tablet.jpg)
 
 # Business Understanding
 ## Business Objective: 
