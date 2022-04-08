@@ -215,12 +215,18 @@ The python code looks like this:
 ```ruby
 import regex as re
 def clean_tweets(sent):
+    # put everythin in lower case
     sent = sent.lower()
-    sent = sent.encode('ascii', 'ignore').decode()    # encode to ascii unicode, it removes strange characters
-    sent = re.sub(r'https\S+', '', sent)    # remove https
-    sent = re.sub(r'http\S+', '', sent)   # remove http
-    sent = re.sub(r'@\S+', '', sent)     # remove @
-    sent = re.sub(r'#\S+', '', sent)    # remove #
+    # encode to ascii unicode, it removes strange characters
+    sent = sent.encode('ascii', 'ignore').decode() 
+    # remove https
+    sent = re.sub(r'https\S+', '', sent)    
+    # remove http
+    sent = re.sub(r'http\S+', '', sent)   
+    # remove @
+    sent = re.sub(r'@\S+', '', sent)     
+    # remove #
+    sent = re.sub(r'#\S+', '', sent) 
     sent = " ".join(sent.split())
     return sent
 ```
