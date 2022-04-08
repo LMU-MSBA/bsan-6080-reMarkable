@@ -2,7 +2,7 @@
 ![alt text](tablet.jpg)
 
 # Table of Content
-* [Sprint 1: Business Understanding](https://github.com/LMU-MSBA/bsan-6080-reMarkable/edit/main/README.md#sprint-1-business-understanding)
+* [Sprint 1: Business Understanding](https://github.com/LMU-MSBA/bsan-6080-reMarkable#sprint-1-business-understanding)
 	* [1.1 Determine Business Objective](https://github.com/LMU-MSBA/bsan-6080-reMarkable#11-determine-business-objective)
 	* [1.2 Assess Situation](https://github.com/LMU-MSBA/bsan-6080-reMarkable#12-assess-situation)
 	* [1.3 Determine Data Mining Goals](https://github.com/LMU-MSBA/bsan-6080-reMarkable#13-determine-data-mining-goals)
