@@ -202,7 +202,27 @@ For the final sprint, we will use the Matplotlib package in Python to create vis
 ### Initial Data Collection Report
 
 ### Initial Data Cleaning Report
+Since the primary data we collected are tweets from Twitter, so the data cleaning consists mainly of text cleaning. And we used Regular Expression to accomplish that.
 
+Things to Clean:
+* Encoding Issue: oftentimes when exporting tweets from Twitter API to csv files, there might be some sort of encoding errors that would result in strings containing strange characters. For example, “I have always continued to write âœðŸ¼ with a pencil”
+* Remove links: many tweets contain links to a photo or a video, and sometimes a website. These strings do not contribute to our analysis. So they should be removed from our data.
+* @ and #: Most tweets contain many @ and # which allowed the tweets to be identified in certain topics. However, when querying tweets on a certain topic, the @ and # will be very repetitive most of the time. In our case, there might be a lot of “@reMarkable”, or “#tablet”, and these words might skew out text analysis later, so we think that should be removed.
+
+We wrote a function for cleaning these things. We used .encode() method to use ACSII encoding, removing the odd character. And then several regex expression to remove the links, @ and #. 
+
+The python code looks like this: 
+```ruby
+def clean_tweets(sent):
+    sent = sent.lower()
+    sent = sent.encode('ascii', 'ignore').decode()    # encode to ascii unicode, it removes strange characters
+    sent = re.sub(r'https\S+', '', sent)    # remove https
+    sent = re.sub(r'http\S+', '', sent)   # remove http
+    sent = re.sub(r'@\S+', '', sent)     # remove @
+    sent = re.sub(r'#\S+', '', sent)    # remove #
+    sent = " ".join(sent.split())
+    return sent
+```
 
 ## 2.2 Describe Data
 ### Data Decription Report
