@@ -1,6 +1,18 @@
 # BSAN 6080 reMarkable Project
 ![alt text](tablet.jpg)
 
+# Table of Content
+* [Sprint 1: Business Understanding](https://github.com/LMU-MSBA/bsan-6080-reMarkable/edit/main/README.md#sprint-1-business-understanding)
+	* [1.1 Determine Business Objective](https://github.com/LMU-MSBA/bsan-6080-reMarkable#11-determine-business-objective)
+	* [1.2 Assess Situation](https://github.com/LMU-MSBA/bsan-6080-reMarkable#12-assess-situation)
+	* [1.3 Determine Data Mining Goals](https://github.com/LMU-MSBA/bsan-6080-reMarkable#13-determine-data-mining-goals)
+	* [1.4 Produce Project Plan](https://github.com/LMU-MSBA/bsan-6080-reMarkable#14-produce-project-plan)
+* [Sprint 2: Data Understanding](https://github.com/LMU-MSBA/bsan-6080-reMarkable#sprint-2-data-understanding)
+	* [2.1 Collect Initial Data](https://github.com/LMU-MSBA/bsan-6080-reMarkable#21-collect-initial-data)
+	* [2.2 Describe Data](https://github.com/LMU-MSBA/bsan-6080-reMarkable#22-describe-data)
+	* [2.3 Explore Data](https://github.com/LMU-MSBA/bsan-6080-reMarkable#23-explore-data)
+	* [2.4 Verify Data Quality](https://github.com/LMU-MSBA/bsan-6080-reMarkable#24-verify-data-quality)
+
 # Sprint 1: Business Understanding
 ## 1.1 Determine Business Objective: 
 ### Background: 
