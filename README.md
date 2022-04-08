@@ -213,6 +213,7 @@ We wrote a function for cleaning these things. We used .encode() method to use A
 
 The python code looks like this: 
 ```ruby
+import regex as re
 def clean_tweets(sent):
     sent = sent.lower()
     sent = sent.encode('ascii', 'ignore').decode()    # encode to ascii unicode, it removes strange characters
