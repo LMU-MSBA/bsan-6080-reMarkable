@@ -246,6 +246,11 @@ After a basic Exploratory Data Analysis, we were ready to create our WordCloud.
 3) Create stopwords so we can exclude the words that does not give us valuable insights
 4) Creating the WordCloud with the following code
 ```
+# Make sure that the dtype is string
+text = " ".join(review for review in df['tweet.text'].astype(str))
+
+# Find the combinations for words before creating a wordclout
+print ("There are {} words in the combination of all cells in column tweet.text".format(len(text)))
 
 # In case I want to exclude some words
 stopwords = set(STOPWORDS)
