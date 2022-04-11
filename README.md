@@ -237,6 +237,32 @@ def clean_tweets(sent):
 ## 2.3 Explore Data
 ### Data Exploration Report
 
+During the Data Exploration Report, we wanted to find insights and useful twitter reviews to get a better understanding on the customer's feedback from reMarkable 2. We created a WordCloud to help engage, educate and capture the attention of the audience to understand what keywords are frequently used about the product.
+
+After a basic Exploratory Data Analysis, we were ready to create our WordCloud.
+#### WordCloud Creation Process
+1) Convert the Tweets as a "string"
+2) Identify the combinations of words we have
+3) Create stopwords so we can exclude the words that does not give us valuable insights
+4) Creating the WordCloud with the following code
+```
+
+# In case I want to exclude some words
+stopwords = set(STOPWORDS)
+stopwords.update(["remarkable", "remarkable2", "tablet", "notebook","paper","one","got","now","made","stuff","use","note","using"])
+
+# Generate a WordCloud Image
+wordcloud = WordCloud(stopwords=stopwords, background_color="white", width=800, height=400).generate(text)
+
+# Display the generated image
+
+plt.axis("off")
+plt.figure( figsize=(25,10))
+plt.tight_layout(pad=0)
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.show()
+```
+![image](https://user-images.githubusercontent.com/99063922/162666080-8123ae44-3c28-44e5-9593-da85cb2cdd9e.png)
 
 ## 2.4 Verify Data Quality
 ### Data Quality Report
