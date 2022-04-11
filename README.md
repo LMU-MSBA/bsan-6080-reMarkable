@@ -325,12 +325,12 @@ plt.imshow(wordcloud, interpolation='bilinear')
 plt.show()
 ```
 ![image](https://user-images.githubusercontent.com/99063922/162666080-8123ae44-3c28-44e5-9593-da85cb2cdd9e.png)
+The larger a word's size in the cloud, the more frequently it is used. The word "love" is the largest, which indicates that the majority of the tweets are positive feedbacks towards the product.
 
 ![Unknown](https://user-images.githubusercontent.com/54599546/162803698-ae6f4212-86de-439f-8b5e-82f28e1977f5.png)
 
 ![Screen Shot 2022-04-11 at 11 44 53 AM](https://user-images.githubusercontent.com/54599546/162808159-c4809f70-7ee6-4687-b916-dfbb1b0a5c69.png)
 
-The larger a word's size in the cloud, the more frequently it is used. The word "love" is the largest, which indicates that the majority of the tweets are positive feedbacks towards the product.
 
 ## 2.4 Verify Data Quality
 ### Data Quality Report
