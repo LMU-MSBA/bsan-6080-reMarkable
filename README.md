@@ -35,7 +35,7 @@ In the short term, our success criteria is to increase product sales by 20% and 
 **Personnel**: 
 We have a diverse team of six well-rounded individuals who possess strong business understanding. Each person brings unique value to the project. 
 * Alena: Has experience using CRISP-DM and is the project owner responsible for the overall project planning.
-* Rana: Has deep marketing understanding, fluent in Norwegian language, and has connections with individuals in Norway (possibly with the CEO of reMarkable).
+* Rana: Has deep marketing understanding, fluent in Norwegian language, and has connections with individuals in Norway (possibly with somebody in the managerial position at reMarkable).
 * Krissy: Has strong marketing understanding and an understanding of US local markets.
 * Oliver: Is a data mining expert and has strong presentation skills.
 * Daniel: Has extensive work experience in business.
