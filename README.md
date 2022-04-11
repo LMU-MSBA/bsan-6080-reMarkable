@@ -326,6 +326,9 @@ plt.show()
 ```
 ![image](https://user-images.githubusercontent.com/99063922/162666080-8123ae44-3c28-44e5-9593-da85cb2cdd9e.png)
 
+![Unknown](https://user-images.githubusercontent.com/54599546/162803365-34ed5474-239b-4de6-8ca0-f5995d09ba5e.png)
+
+
 The larger a word's size in the cloud, the more frequently it is used. The word "love" is the largest, which indicates that the majority of the tweets are positive feedbacks towards the product.
 
 ## 2.4 Verify Data Quality
