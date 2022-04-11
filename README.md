@@ -233,6 +233,63 @@ def clean_tweets(sent):
 ## 2.2 Describe Data
 ### Data Decription Report
 
+In this data description section, we aim to examine the surface properties of the acquired data, in order to ensure the validity and/or caution we need to take, should we find any limiting records.  We generate the table below to summarize our findings as well as describe each variable.
+* The data we obtained was extracted as a csv file consisting of 2,297 records (rows) and 33 fields (columns). 
+* There is a mix of int64(2), object(25), and float64(6) data types as listed in the table below.  
+* It is interesting to note that although there are 2,297 records, there are only 1,599 with unique usernames. 
+* Only 77 records contained geo locations, 63 of which are unique. There are 5 different languages being represented, however English makes up 99.61% of the records. 
+* There are multiple records which include NaN values, therefore these should be evaluated when running the analysis. 
+
+These are the various python commands used to explore our data set. 
+```
+import pandas as pd
+df = pd.read_csv("/content/clean_reMarkable2_tweets.csv")
+df.describe()
+df.count()
+df.shape
+df.isnull().sum()
+print(df.nunique())
+df.head(5)
+df.info()
+```
+
+| #  | Column                    | Non-Null Count | Dtype   | Description |  
+|--- | ------                    | -------------- | -----   | ----------- |
+| 0  | Unnamed: 0                | 2297 non-null  | int64   | Index number |
+| 1  | Unnamed: 0.1              | 2297 non-null  | int64   | Index number |
+| 2  |  tweet.id                 | 2297 non-null  | object  | Identifying number for Tweet posted |
+| 3  | tweet.text                | 2297 non-null  | object  | Content of the posted tweet |
+| 4  | tweet.attachments         | 532 non-null   | object  | Path for attachment. No attachment if NaN|
+| 5  | tweet.author_id           | 2297 non-null  | float64 | Identifying number of person posting the tweet|
+| 6  | tweet.context_annotations | 2297 non-null  | object  | Annotations related to posted tweet |
+| 7  |  tweet.conversation_id    | 2297 non-null  | object  | Identifying number for conversation |
+| 8  | tweet.created_at          | 2297 non-null  | object  | Date & time post was created in format YYYY-MM-DD HH:MM:SS+00:00 |
+| 9  | tweet.entities            | 2182 non-null  | object  | Mentions/annotations/URL’s |
+| 10 | tweet.geo                 | 77 non-null    | object  | Geographical location of device being used to make the post |
+| 11 | tweet.in_reply_to_user_id | 951 non-null   | float64 | References the user who’s tweet is being replied to |
+| 12 | tweet.lang                | 2297 non-null  | object  | Language used to make the post |
+| 13 | tweet.public_metrics      | 2297 non-null  | object  | Lists the user’s counts for retweets, replies, likes, quotes |
+| 14 | tweet.possibly_sensitive  | 2297 non-null  | object  | Uses “True” or “False” to categorize a tweet as sensitive or not |
+| 15 | tweet.referenced_tweets   | 806 non-null   | object  | If post is responding to another tweet, the original tweet’s id is listed here |
+| 16 | tweet.reply_settings      | 2297 non-null  | object  | Is reply being viewed by “everyone”, people “following”, or “mentionedUsers” |
+| 17 | tweet.source              | 2297 non-null  | object  | App from which the posted tweet originated |
+| 18 | tweet.withheld            | 0 non-null     | float64 | Was tweet withheld/not posted? |
+| 19 | user.created_at           | 2297 non-null  | object  | Date & Time user was created in format YYYY-MM-DD HH:MM:SS+00:00 |
+| 20 | user.description          | 2071 non-null  | object  | User self-description on twitter account |
+| 21 | user.entities             | 1693 non-null  | object  | Entities (mentions, urls…) reflecting on Twitter account |
+| 22 | user.id                   | 2297 non-null  | float64 | User’s identifying id# |
+| 23 | user.location             | 1852 non-null  | object  | User’s physical location |
+| 24 | user.name                 | 2297 non-null  | object  | User’s Self-identifying name as listed on Twitter account |
+| 25 | user.pinned_tweet_id      | 997 non-null   | float64 | Identifying number for the pinned Twitter post |
+| 26 | user.profile_image_url    | 2297 non-null  | object  | Url for user’s profile image  |
+| 27 | user.protected            | 2297 non-null  | object  | Is user’s account protected? |
+| 28 | user.public_metrics       | 2297 non-null  | object  | Metric’s visible on account such as count of followers, count of following, count of tweets, count of listed |
+| 29 | user.url                  | 1423 non-null  | object  | User’s URL |
+| 30 | user.username             | 2297 non-null  | object  | User’s username as listed on Twitter account |
+| 31 | user.verified             | 2297 non-null  | object  | Is user a verified individual? |
+| 32 | user.withheld             | 0 non-null     | float64 | Is user withheld/cancelled account |
+
+
 
 ## 2.3 Explore Data
 ### Data Exploration Report
