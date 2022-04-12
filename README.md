@@ -346,7 +346,8 @@ In the figure below, you can see that we were able to extract the tweets that we
 
 #### Users Demographics
 ![Unknown-2](https://user-images.githubusercontent.com/54599546/163023224-00c4bd6e-cd13-4f8e-b1b5-b412846e4f52.png)
-![Unknown-3](https://user-images.githubusercontent.com/54599546/163023232-a9cda290-30bf-4218-9a55-2880f81ab863.png)
+![Unknown](https://user-images.githubusercontent.com/54599546/163023457-14ee9445-4b42-43fa-aaee-3d169acf9192.png)
+
 
 ## 2.4 Verify Data Quality
 ### Data Quality Report
