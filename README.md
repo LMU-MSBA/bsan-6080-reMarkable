@@ -334,6 +334,7 @@ The larger a word's size in the cloud, the more frequently it is used. The word 
 Utilizing the 'tweet.created_at' column we were able to analyze and find various insights regarding the date. First, we found the date range of the dataset is from 09/22/2019-04/05/2022. Additionally, we were able to find the days that contained the most Tweets. For example, in the figure below we can see that 11/05/2020 has the highest frequency of Tweets with a count of 21 posts.
 
 ![Unknown](https://user-images.githubusercontent.com/54599546/162803698-ae6f4212-86de-439f-8b5e-82f28e1977f5.png)
+![Unknown-3](https://user-images.githubusercontent.com/54599546/163023134-67dc2967-9d47-4633-8400-f45d62efe638.png)
 
 #### Retweets, Replies and Likes
 
@@ -343,6 +344,9 @@ In the figure below, you can see that we were able to extract the tweets that we
 
 ![Screen Shot 2022-04-11 at 11 44 53 AM](https://user-images.githubusercontent.com/54599546/162808159-c4809f70-7ee6-4687-b916-dfbb1b0a5c69.png)
 
+#### Users Demographics
+![Unknown-2](https://user-images.githubusercontent.com/54599546/163023224-00c4bd6e-cd13-4f8e-b1b5-b412846e4f52.png)
+![Unknown-3](https://user-images.githubusercontent.com/54599546/163023232-a9cda290-30bf-4218-9a55-2880f81ab863.png)
 
 ## 2.4 Verify Data Quality
 ### Data Quality Report
