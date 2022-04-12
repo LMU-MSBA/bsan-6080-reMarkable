@@ -344,7 +344,7 @@ In the figure below, you can see that we were able to extract the tweets that we
 
 ![Screen Shot 2022-04-11 at 11 44 53 AM](https://user-images.githubusercontent.com/54599546/162808159-c4809f70-7ee6-4687-b916-dfbb1b0a5c69.png)
 
-#### Users Demographics
+#### Users
 ![Unknown-2](https://user-images.githubusercontent.com/54599546/163023224-00c4bd6e-cd13-4f8e-b1b5-b412846e4f52.png)
 ![Unknown](https://user-images.githubusercontent.com/54599546/163023457-14ee9445-4b42-43fa-aaee-3d169acf9192.png)
 
