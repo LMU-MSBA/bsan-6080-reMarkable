@@ -373,6 +373,8 @@ edi.predefined_erroneous_data()
 
 To answer whether the data is complete and if there are any missing values, we used the df.isnull().sum(). The dataset contains considerable rows of missing data over multiple columns. The missing values should be evaluated in the data preparation step.  
 
+<img width="309" alt="Screen Shot 2022-04-12 at 11 23 35 AM" src="https://user-images.githubusercontent.com/61371423/163028717-f6fe56be-f9de-478c-8560-ec340d2d199a.png">
+
 We found that there are no duplicate values in the data, therefore we can ensure that the data is unique. 
 
 We installed the ydata_quality for deeper analysis on the quality of the data. We used ErroneousDataIdentifier to identify whether there are any possible erroneous data. The full evaluation of dataset reported that there are no erroneous found nor are there predefined erroneous data in our dataset. 
