@@ -331,7 +331,7 @@ The larger a word's size in the cloud, the more frequently it is used. The word 
 
 #### Exploratory Analysis on Date
 
-Utilizing the 'tweet.created_at' column we were able to analyze and find the days that contained the most Tweets. For example, in the figure below we can see that 11/05/2020 has the highest frequency of Tweets with a count of 21 posts.
+Utilizing the 'tweet.created_at' column we were able to analyze and find various insights regarding the date. First, we found the date range of the dataset is from 09/22/2019-04/05/2022. Additionally, we were able to find the days that contained the most Tweets. For example, in the figure below we can see that 11/05/2020 has the highest frequency of Tweets with a count of 21 posts.
 
 ![Unknown](https://user-images.githubusercontent.com/54599546/162803698-ae6f4212-86de-439f-8b5e-82f28e1977f5.png)
 
