@@ -200,17 +200,19 @@ For the final sprint, we will use the Matplotlib package in Python to create vis
 # Sprint 2: Data Understanding
 ## 2.1 Collect Initial Data
 
+### Initial Data Collection Report
 Initially, we wanted to gather data from 2 sources.
-Twitter through Twitter Academic API v2 and Amazon through Axesso API.
+Twitter through **Twitter Academic API v2** and **Amazon through Axesso API**.
 Unfortunately, reMarkable2 is not available on Amazon and the reviews on reMarkable1 were sparse and not useful. Hence, we decided to go with Twitter.
 
 We obtained a key for Twitter Academic API v2 and planned to collect 50,000 tweets.
-We collected 2400 Tweets on reMarkable2. These are actually all of the tweets that mention reMarkable2. And they go back up to 2019, the year the product was launched.
-The following is the query we used:
-query = 'reMarkable2 lang:en -is:retweet'
+We collected **2400 Tweets** on reMarkable2. These are **actually all of the tweets** that mention reMarkable2. And they go back up to 2019, the year the product was launched.
 
-Since we are primarily going to use Python in our future analysis, we performed the data collection via Google Colab and saved the dataset directly to Google Drive for easy access and transparency between all team members.
-For Data manipulation we used Pandas library
+The following is the query we used:
+**query = 'reMarkable2 lang:en -is:retweet'**
+
+Since we are primarily going to use **Python** in our future analysis, we performed the data collection via **Google Colab** and saved the dataset directly to **Google Drive** for easy access and transparency between all team members.
+For Data manipulation we used **Pandas** library
 
 Other than the text of the Tweets the dataset provides:
 tweet.public_metrics
@@ -228,8 +230,6 @@ Twitter for iPhone
 
 Depending on the results of future analysis, we are planning to collect more Tweets on other keywords related to reMarkable2.
 
-
-### Initial Data Collection Report
 
 ### Initial Data Cleaning Report
 Since the primary data we collected are tweets from Twitter, so the data cleaning consists mainly of text cleaning. And we used Regular Expression to accomplish that.
