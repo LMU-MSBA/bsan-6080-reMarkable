@@ -337,7 +337,7 @@ Utilizing the 'tweet.created_at' column we were able to analyze and find various
 
 #### Retweets, Replies and Likes
 
-Utilizing the 'tweet.public_metrics' attribute from the original dataset, we were able to extract various metrics that gave us additional information regarding the Tweet such as how mnay likes/Rewteets it received. Additionally, this metric provided information on the user that Tweeted such as their following/followers list and how many Tweets they have posted on their account.
+Utilizing the 'tweet.public_metrics' attribute from the original dataset, we were able to extract various metrics that gave us additional information regarding the Tweet such as how many likes/Rewteets it received. Additionally, this metric provided information on the user that Tweeted such as their following/followers list and how many Tweets they have posted on their account.
 
 In the figure below, you can see that we were able to extract the tweets that were posted by users with the top 10 highest following. We can see that there is a user with 1,411,037 followers  who posted and is the user with the highest following in the dataset.
 
