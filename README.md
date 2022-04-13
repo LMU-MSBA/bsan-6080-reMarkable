@@ -219,21 +219,26 @@ The following is the query we used:
 Since we are primarily going to use **Python** in our future analysis, we performed the data collection via **Google Colab** and saved the dataset directly to **Google Drive** for easy access and transparency between all team members.
 For Data manipulation we used **Pandas** library
 
+
+
 Other than the text of the Tweets the dataset provides:
 
-tweet.public_metrics
+
+**tweet.public_metrics**
 
 {'retweet_count': 1, 'reply_count': 0, 'like_count': 15, 'quote_count': 1}
 
-user.public_metrics: 
+
+**user.public_metrics:**
 
 {'followers_count': 3719, 'following_count': 2607, 'tweet_count': 13414, 'listed_count': 249}
 
 Both can be easily “exploded” into separate columns for future analysis via
 
  df[‘column’].apply(pd.Series) // using Pandas
+ 
 
-breakdown by client, etc:
+**breakdown by client, etc:**
 
 Twitter for Android
 
@@ -243,6 +248,9 @@ Twitter for iPhone
 
 
 Depending on the results of future analysis, we are planning to collect more Tweets on other keywords related to reMarkable2.
+
+
+
 
 
 ### Initial Data Cleaning Report
