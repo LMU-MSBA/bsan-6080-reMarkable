@@ -389,8 +389,8 @@ In the figure below, you can see that we were able to extract the tweets that we
 ![Screen Shot 2022-04-11 at 11 44 53 AM](https://user-images.githubusercontent.com/54599546/162808159-c4809f70-7ee6-4687-b916-dfbb1b0a5c69.png)
 
 #### Users
-Lastly, we some additional exploratory analysis we were able to see the distribution of sources as well as the user's location in which they Tweeted.
-Down below we see that the Twitter Web App is the most popular source with almost 800 Tweets coming from that source followed by Twitter for iPhone and Twitter for Android. Additionally, we found that the UK is the location with the most users that are posting about reMarkable.
+Lastly, with some additional exploratory analysis we were able to see the distribution of sources as well as the user's location in which they Tweeted.
+Down below we found that the UK is the location with the most users that are posting about reMarkable. Additionally, we see that the Twitter Web App is the most popular source with almost 800 Tweets coming from that source followed by Twitter for iPhone and Twitter for Android.
 
 ![Unknown-2](https://user-images.githubusercontent.com/54599546/163023224-00c4bd6e-cd13-4f8e-b1b5-b412846e4f52.png)
 ![Unknown](https://user-images.githubusercontent.com/54599546/163023457-14ee9445-4b42-43fa-aaee-3d169acf9192.png)
