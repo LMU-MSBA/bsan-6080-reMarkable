@@ -33,7 +33,7 @@
 
 # Sprint 1: 
 # Business Understanding Phase
-## 1.1 Determine Business Objective: 
+## 1.1 Determine Business Objective [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 ### Background: 
 reMarkable is a Norwegian-based tablet company that was founded in early 2014. It produces a specialized electronic-ink tablet whose main focus is to replicate the experiences users have with paper such as writing, drawing, and reading. reMarkable position intersects three markets; smart tablets, physical book substitutes, and drawing tablets, therefore allowing the company to compete with a diverse array of companies from well-known brands such as Apple’s iPad and Amazon’s Kindle to smaller companies such as SuperNote and Boox. 
 
@@ -49,7 +49,7 @@ First we need to determine how our current and potential customers are segmented
 In the short term, our success criteria is to increase product sales by 20% and achieve higher customer satisfaction. In the long run, we hope to help design a better reMarkable3 where the success will be measured by the product’s sales and customer feedback. 
 
 
-## 1.2 Assess Situation: 
+## 1.2 Assess Situation [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 ### Inventory of resources
 **Personnel**: 
 We have a diverse team of six well-rounded individuals who possess strong business understanding. Each person brings unique value to the project. 
@@ -144,7 +144,7 @@ Better positioning. At least 2 new developments of distinctive assets for the pr
 Ability to reuse our methodology for future research and improvements.
 
 
-## 1.3 Determine Data Mining Goals:
+## 1.3 Determine Data Mining Goals [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 ### Data Mining Goals
 Our main data mining goal is to obtain insightful data which will help us achieve our aforementioned business objectives. 
@@ -157,7 +157,7 @@ The most basic is “is this dataset usable?”. This can be determined by makin
 Another criteria in determining the success of our data mining, is whether we can extract at least 2 new customer needs and/or pain points from the analyzed UGC. If we are unable to extract this information from the dataset, we will need to gather additional data from the same sources or different platforms. 
 Another criteria is making sure that we are able to properly create an STP model from our dataset. We should be able to segment our audience so that the marketing team can target new customers. Should we not have sufficient information to segment our audience, we would need to obtain additional data. 
 
-## 1.4 Produce Project Plan:
+## 1.4 Produce Project Plan [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 In order to complete our desired goals for this project, we decided to utilize Agile methodologies to assist with project management. Specifically, we will be using Trello to assign tasks to ensure we hit our various sprint goals as well as to keep all project related material in one place. Furthermore, we will use WhatsApp for any necessary quick and instant messaging. Lastly, the team has agreed to have a weekly meeting every Tuesday at 5:00 P.M. until the completion of our project, so that we can communicate where everyone is with their assigned tasks and keep the team on the same page at various points throughout the project. Down below is more information on the specifics of each Sprint and how we plan to reach these various milestones.
 
@@ -218,7 +218,7 @@ For the final sprint, we will use the Matplotlib package in Python to create vis
 
 # Sprint 2: 
 # Data Understanding Phase
-## 2.1 Collect Initial Data
+## 2.1 Collect Initial Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 ### Initial Data Collection Report
 Initially, we wanted to gather data from 2 sources.
@@ -303,7 +303,7 @@ def clean_tweets(sent):
     return sent
 ```
 
-## 2.2 Describe Data
+## 2.2 Describe Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 ### Data Decription Report
 
 In this data description section, we aim to examine the surface properties of the acquired data, in order to ensure the validity and/or caution we need to take, should we find any limiting records.  We generate the table below to summarize our findings as well as describe each variable.
@@ -363,7 +363,7 @@ df.info()
 
 
 
-## 2.3 Explore Data
+## 2.3 Explore Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 ### Data Exploration Report
 
 During the Data Exploration Report, we wanted to find insights and useful twitter reviews to get a better understanding on the customer's feedback from reMarkable 2. We created a WordCloud to help engage, educate and capture the attention of the audience to understand what keywords are frequently used about the product.
@@ -424,7 +424,7 @@ Down below we found that the UK is the location with the most users that are pos
 ![Unknown](https://user-images.githubusercontent.com/54599546/163023457-14ee9445-4b42-43fa-aaee-3d169acf9192.png)
 
 
-## 2.4 Verify Data Quality
+## 2.4 Verify Data Quality [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 ### Data Quality Report
 To examine the quality of the data, our team addressed the following questions in our analysis: 
  	- Is the data complete (does it cover all the cases required)?
@@ -457,39 +457,39 @@ We installed the ydata_quality for deeper analysis on the quality of the data. W
 
 # Sprint 3: 
 # Data Preparation Phase
-## 3.1 Select Data
+## 3.1 Select Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 
-## 3.2 Clean Data
+## 3.2 Clean Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 
-## 3.3 Construct Data
+## 3.3 Construct Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 
-## 3.4 Integrate Data
+## 3.4 Integrate Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 
-## 3.5 Format Data
+## 3.5 Format Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 
 # Modeling Phase
-## 4.1 Selecting Modeling Techniquies
+## 4.1 Selecting Modeling Techniquies [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 
-## 4.2 Generate Test Design
+## 4.2 Generate Test Design [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 
-## 4.3 Build Model
+## 4.3 Build Model [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 
-## 4.4 Assess Model
+## 4.4 Assess Model [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 
 # Evaluation Phase
-## 5.1 Evaluate Results
+## 5.1 Evaluate Results [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 
-## 5.2 Review Process
+## 5.2 Review Process [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 
-## 5.3 Determine Next Steps
+## 5.3 Determine Next Steps [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
