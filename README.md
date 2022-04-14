@@ -2,17 +2,23 @@
 ![alt text](tablet.jpg)
 
 # Table of Content
-* []
-* [Business Understanding Phase](https://github.com/LMU-MSBA/bsan-6080-reMarkable#sprint-1-business-understanding)
+* [Sprint 1: ](https://github.com/LMU-MSBA/bsan-6080-reMarkable#sprint-1)
+* [1. Business Understanding Phase](https://github.com/LMU-MSBA/bsan-6080-reMarkable#business-understanding-phase)
 	* [1.1 Determine Business Objective](https://github.com/LMU-MSBA/bsan-6080-reMarkable#11-determine-business-objective)
 	* [1.2 Assess Situation](https://github.com/LMU-MSBA/bsan-6080-reMarkable#12-assess-situation)
 	* [1.3 Determine Data Mining Goals](https://github.com/LMU-MSBA/bsan-6080-reMarkable#13-determine-data-mining-goals)
 	* [1.4 Produce Project Plan](https://github.com/LMU-MSBA/bsan-6080-reMarkable#14-produce-project-plan)
-* [Data Understanding Phase](https://github.com/LMU-MSBA/bsan-6080-reMarkable#sprint-2-data-understanding)
+* [Sprint 2: ](https://github.com/LMU-MSBA/bsan-6080-reMarkable#sprint-2)
+* [2. Data Understanding Phase](https://github.com/LMU-MSBA/bsan-6080-reMarkable#data-understanding-phase)
 	* [2.1 Collect Initial Data](https://github.com/LMU-MSBA/bsan-6080-reMarkable#21-collect-initial-data)
 	* [2.2 Describe Data](https://github.com/LMU-MSBA/bsan-6080-reMarkable#22-describe-data)
 	* [2.3 Explore Data](https://github.com/LMU-MSBA/bsan-6080-reMarkable#23-explore-data)
 	* [2.4 Verify Data Quality](https://github.com/LMU-MSBA/bsan-6080-reMarkable#24-verify-data-quality)
+* [Sprint 3: ](https://github.com/LMU-MSBA/bsan-6080-reMarkable#sprint-3)
+* [3. Data Preparation Phase](https://github.com/LMU-MSBA/bsan-6080-reMarkable#data-preparation-phase)
+	* [3.1 Select Data]()
+	* [3.2 Clean Data]()
+	* []
 
 # Sprint 1: 
 # Business Understanding Phase
@@ -444,6 +450,9 @@ We installed the ydata_quality for deeper analysis on the quality of the data. W
 
 
 ## 3.2 Clean Data
+
+
+## 3.3 Construct Data
 
 
 ## 3.4 Integrate Data
