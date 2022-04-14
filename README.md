@@ -16,9 +16,20 @@
 	* [2.4 Verify Data Quality](https://github.com/LMU-MSBA/bsan-6080-reMarkable#24-verify-data-quality)
 * [Sprint 3: ](https://github.com/LMU-MSBA/bsan-6080-reMarkable#sprint-3)
 * [3. Data Preparation Phase](https://github.com/LMU-MSBA/bsan-6080-reMarkable#data-preparation-phase)
-	* [3.1 Select Data]()
-	* [3.2 Clean Data]()
-	* []
+	* [3.1 Select Data](https://github.com/LMU-MSBA/bsan-6080-reMarkable#31-select-data)
+	* [3.2 Clean Data](https://github.com/LMU-MSBA/bsan-6080-reMarkable#32-clean-data)
+	* [3.3 Construct Data](https://github.com/LMU-MSBA/bsan-6080-reMarkable#33-construct-data)
+	* [3.4 Integrate Data](https://github.com/LMU-MSBA/bsan-6080-reMarkable#34-integrate-data)
+	* [3.5 Format Data](https://github.com/LMU-MSBA/bsan-6080-reMarkable#35-format-data)
+* [4. Modeling Phase](https://github.com/LMU-MSBA/bsan-6080-reMarkable#modeling-phase)
+	* [4.1 Selecting Modeling Techniquies](https://github.com/LMU-MSBA/bsan-6080-reMarkable#41-selecting-modeling-techniquies)
+	* [4.2 Generate Test Design](https://github.com/LMU-MSBA/bsan-6080-reMarkable#42-generate-test-design)
+	* [4.3 Build Model](https://github.com/LMU-MSBA/bsan-6080-reMarkable#43-build-model)
+	* [4.4 Assess Model](https://github.com/LMU-MSBA/bsan-6080-reMarkable#44-assess-model)
+* [5. Evaluation Phase](https://github.com/LMU-MSBA/bsan-6080-reMarkable#evaluation-phase)
+	* [5.1 Evaluate Results](https://github.com/LMU-MSBA/bsan-6080-reMarkable#51-evaluate-results)
+	* [5.2 Review Process](https://github.com/LMU-MSBA/bsan-6080-reMarkable#52-review-process)
+	* [5.3 Determine Next Steps](https://github.com/LMU-MSBA/bsan-6080-reMarkable#53-determine-next-steps)
 
 # Sprint 1: 
 # Business Understanding Phase
