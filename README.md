@@ -458,6 +458,15 @@ We installed the ydata_quality for deeper analysis on the quality of the data. W
 # Sprint 3: 
 # Data Preparation Phase
 ## 3.1 Select Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
+Twitter API extracts a large number of variables, and many of them are not useful to our analysis and should be removed. This will help us stay focused on the variables that matter and speed up our analysis. The following is a list of variables we decided to remove: 
+
+> ['tweet.id', 'tweet.attachments', 'tweet.author_id', 'tweet.context_annotations', 'tweet.conversation_id', 'tweet.geo', 'tweet.in_reply_to_user_id', 'tweet.lang', 'tweet.possibly_sensitive', 'tweet.referenced_tweets', 'tweet.reply_settings'  'tweet.withheld', 'user.description',  'user.entities', 'user.id', 'user.name', 'user.pinned_tweet_id', 'user.profile_image_url',  'user.protected', 'user.url', 'user.username', 'user.withheld']
+
+A lot of these variables contain irrelevant information about users and the tweets such as the user id, tweet id, user name, etc. 
+
+There are two columns we find especially interesting are ‘tweet.public_metrics’ and ‘user.public_metrics’. ‘tweet.public_metrics’ contains values such as likes, retweets, and replies, while ‘user.public_metrics’ contains following counts and follower counts. Once we tract those values into individual columns we will remove these two columns. 
+
+One thing to be noted from the EDA is that while most tweets are from iPhone, Android phones, and the Twitter web app, there are a very small number amount of tweets that are from bots and marketing software platforms. However, these types of tweets are dismissably small, and we think they will not skew our analysis, so we decided not to remove them. 
 
 
 ## 3.2 Clean Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
