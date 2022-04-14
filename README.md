@@ -2,18 +2,20 @@
 ![alt text](tablet.jpg)
 
 # Table of Content
-* [Sprint 1: Business Understanding](https://github.com/LMU-MSBA/bsan-6080-reMarkable#sprint-1-business-understanding)
+* []
+* [Business Understanding Phase](https://github.com/LMU-MSBA/bsan-6080-reMarkable#sprint-1-business-understanding)
 	* [1.1 Determine Business Objective](https://github.com/LMU-MSBA/bsan-6080-reMarkable#11-determine-business-objective)
 	* [1.2 Assess Situation](https://github.com/LMU-MSBA/bsan-6080-reMarkable#12-assess-situation)
 	* [1.3 Determine Data Mining Goals](https://github.com/LMU-MSBA/bsan-6080-reMarkable#13-determine-data-mining-goals)
 	* [1.4 Produce Project Plan](https://github.com/LMU-MSBA/bsan-6080-reMarkable#14-produce-project-plan)
-* [Sprint 2: Data Understanding](https://github.com/LMU-MSBA/bsan-6080-reMarkable#sprint-2-data-understanding)
+* [Data Understanding Phase](https://github.com/LMU-MSBA/bsan-6080-reMarkable#sprint-2-data-understanding)
 	* [2.1 Collect Initial Data](https://github.com/LMU-MSBA/bsan-6080-reMarkable#21-collect-initial-data)
 	* [2.2 Describe Data](https://github.com/LMU-MSBA/bsan-6080-reMarkable#22-describe-data)
 	* [2.3 Explore Data](https://github.com/LMU-MSBA/bsan-6080-reMarkable#23-explore-data)
 	* [2.4 Verify Data Quality](https://github.com/LMU-MSBA/bsan-6080-reMarkable#24-verify-data-quality)
 
-# Sprint 1: Business Understanding
+# Sprint 1: 
+# Business Understanding Phase
 ## 1.1 Determine Business Objective: 
 ### Background: 
 reMarkable is a Norwegian-based tablet company that was founded in early 2014. It produces a specialized electronic-ink tablet whose main focus is to replicate the experiences users have with paper such as writing, drawing, and reading. reMarkable position intersects three markets; smart tablets, physical book substitutes, and drawing tablets, therefore allowing the company to compete with a diverse array of companies from well-known brands such as Apple’s iPad and Amazon’s Kindle to smaller companies such as SuperNote and Boox. 
@@ -197,7 +199,8 @@ Q&A
 For the final sprint, we will use the Matplotlib package in Python to create visualizations as well as Tableau to create dashboards of our findings. We will also create a presentation deck on Google Slides and prepare for our final presentation. Lastly, a meeting will be necessary to breakdown and discuss the specific tasks that need to be done to complete the Deployment CRISP-DM documentation.
 
 
-# Sprint 2: Data Understanding
+# Sprint 2: 
+# Data Understanding Phase
 ## 2.1 Collect Initial Data
 
 ### Initial Data Collection Report
@@ -435,3 +438,38 @@ We found that there are no duplicate values in the data, therefore we can ensure
 
 We installed the ydata_quality for deeper analysis on the quality of the data. We used ErroneousDataIdentifier to identify whether there are any possible erroneous data. The full evaluation of dataset reported that there are no erroneous found nor are there predefined erroneous data in our dataset. 
 
+# Sprint 3: 
+# Data Preparation Phase
+## 3.1 Select Data
+
+
+## 3.2 Clean Data
+
+
+## 3.4 Integrate Data
+
+
+## 3.5 Format Data
+
+
+# Modeling Phase
+## 4.1 Selecting Modeling Techniquies
+
+
+## 4.2 Generate Test Design
+
+
+## 4.3 Build Model
+
+
+## 4.4 Assess Model
+
+
+# Evaluation Phase
+## 5.1 Evaluate Results
+
+
+## 5.2 Review Process
+
+
+## 5.3 Determine Next Steps
