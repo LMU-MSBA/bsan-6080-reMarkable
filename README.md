@@ -470,6 +470,53 @@ One thing to be noted from the EDA is that while most tweets are from iPhone, An
 
 
 ## 3.2 Clean Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
+Due to the analytical model we are going to use, we need two different data sets with two different stages of cleaning. Most text mining algorithm requires stopwords removal and lemmatization. However, BERT natural language processing is extremely powerful where it can retain the semantic meaning of the sentence even with all the stopwords and different forms of the same word. 
+
+The Initial Data Cleaning steps took care of most of the basic text cleaning, including properly encoding the text, removing links, @’s, and #’s. This level of cleaning is enough for analysis with BERT. However, other algorithms require a little more cleaning. 
+
+Stopwords are words that do not provide too much semantic meaning to the sentence. We imported stopwords from the NLTK library and wrote a function for the stopwords removal. After removing the stopwords, we wrote another function that would lemmatize each tweet. And the reason why there is a need to lemmatize the words is that the same word can be in different variations, and that could skew the text mining processes if they are not formatted to their root word form.
+
+```ruby
+import nltk
+from nltk.corpus import stopwords
+nltk.download('stopwords')
+stop_words = stopwords.words('english')
+
+# function to remove stopwords
+def remove_stopwords(tweets):
+  all_tweet = tweets.split(' ')
+  rem_text = " ".join([i for i in all_tweet if i not in stop_words])
+  return rem_text
+  
+from nltk.tokenize import word_tokenize
+from nltk.corpus import wordnet
+from nltk.stem import WordNetLemmatizer
+import nltk
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+nltk.download('stopwords')
+
+wl = WordNetLemmatizer()
+ 
+# this is a helper function to map NTLK position tags
+def get_wordnet_pos(tag):
+    if tag.startswith('J'):
+        return wordnet.ADJ
+    elif tag.startswith('V'):
+        return wordnet.VERB
+    elif tag.startswith('N'):
+        return wordnet.NOUN
+    elif tag.startswith('R'):
+        return wordnet.ADV
+    else:
+        return wordnet.NOUN
+
+def lemmatizer(string):
+    word_pos_tags = nltk.pos_tag(word_tokenize(string)) # Get position tags
+    a=[wl.lemmatize(tag[0], get_wordnet_pos(tag[1])) for idx, tag in enumerate(word_pos_tags)] # Map the position tag and lemmatize the word/token
+    return " ".join(a)
+```
 
 
 ## 3.3 Construct Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
