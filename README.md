@@ -527,6 +527,68 @@ def lemmatizer(string):
 
 ## 3.5 Format Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
+The main modeling technique we are using is k-means clustering. Since k-means can only take numbers or vectors as inputs we need to first transform our data from text to text embeddings.
+
+We are using a pre-trained BERT model (sentence-transformers) for getting the sentence embeddings of the tweets.
+
+Our model doesn’t require a specific order of attributes.
+
+Here is a snippet of the code we used for Data Formatting.
+```python
+# code for Data formatting
+!pip install sentence-transformers
+
+import pandas as pd
+from sentence_transformers import SentenceTransformer
+import tensorflow as tf
+
+tweets = pd.read_csv('/content/clean_reMarkable2_tweets.csv')
+tweets.head(1)
+
+
+# Get the GPU device name.
+device_name = tf.test.gpu_device_name()
+
+# The device name should look like the following:
+if device_name == '/device:GPU:0':
+    print('Found GPU at: {}'.format(device_name))
+else:
+    raise SystemError('GPU device not found')
+    
+    
+# this function uses simple BERT embedding
+def simple_bert_embedding(data, model = 'all-MiniLM-L6-v2'):
+  # use model
+  embedder = SentenceTransformer(model)
+
+  # load sentences into corpus
+  corpus = data['tweet.text'].to_list()
+  corpus_embeddings = embedder.encode(corpus)
+
+  return corpus, corpus_embeddings
+  
+  
+# embed tweets
+corpus, corpus_embeddings = simple_bert_embedding(tweets)
+print(corpus[0:5])
+print(corpus_embeddings[0:5])
+
+
+# Output: Tweets and their embeddings ready for clustering.
+
+['two decades into the millenium, i find myself paying nontrivial for a tablet with the least amount of apps/capabilities i could find. the 90s dial-up internet kid in me has mixed feelings. excited to test whether less is truly more for my attention span', 'while at the airport re-reading clean code taking notes using the fantastic', "i use a boox note air2. it's like the remarkable2, but operates on android so you can use other apps not available on remarkable. it also has a backlight screen that you can adjust color temperature and brightness. the surface + pen nibs makes it feel very close to paper.", 'i had a remarkable2 tablet, tested it for a week and then realized i was willing to pay a little extra for an ipad with the same capabilities plus so much more. got the ipad instead with a paper feel protector and im obsessed!', "i love my remarkable2 and use it for hours most days. but writing/reading is all you can do on it and there is no color on the screen (just shades of gray). on my convertible laptop, i've happily used pdfannotator software for years, but it's not as paper-like as the remarkable."]
+[[-0.00832761 -0.00102415  0.06460088 ... -0.02326298 -0.08229515
+   0.02032411]
+ [ 0.0150835  -0.00949365 -0.00077695 ...  0.05709019 -0.05652962
+  -0.01889319]
+ [-0.09136266 -0.02280454  0.02096646 ...  0.00760711 -0.06704685
+   0.09065781]
+ [-0.08097623 -0.10049953  0.0152678  ... -0.05365163 -0.05973168
+   0.09055872]
+ [-0.05229015 -0.01654954 -0.03774367 ... -0.0285043  -0.03328875
+   0.03290348]]
+    
+```
 
 # Modeling Phase
 ## 4.1 Selecting Modeling Techniquies [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
