@@ -521,6 +521,29 @@ def lemmatizer(string):
 
 ## 3.3 Construct Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
+This task includes additional data preparation operations such as producing derived attributes,
+completing new records, and/or transforming/normalizing values. As mentioned above, when selecting the data for our model, we especially found the 
+‘tweet.public_metrics’ and ‘user.public_metrics’ to be criticlal for our analysis. With the code below you can see how we were able to extract retweet, reply, and like metrics for each tweet. Additionally, we had the ability to find user information including their following count, how many accounts they follow, and tweets they have posted.
+
+```ruby
+# get retweet, reply and like count from tweet.public_metrics 
+df['tweet.retweet_count'] = [re.findall(r'retweet_count\': (\d*)', x)[0] for x in df['tweet.public_metrics']]
+
+df['tweet.reply_count'] = [re.findall(r'reply_count\': (\d*)', x)[0] for x in df['tweet.public_metrics']]
+
+df['tweet.like_count'] = [re.findall(r'like_count\': (\d*)', x)[0] for x in df['tweet.public_metrics']]
+
+df['tweet.quote_count'] = [re.findall(r'quote_count\': (\d*)', x)[0] for x in df['tweet.public_metrics']]
+
+# get follwoing, follower and tweet count from user.public_metrics 
+df['user.followers_count'] = [re.findall(r'followers_count\': (\d*)', x)[0] for x in df['user.public_metrics']]
+
+df['user.following_count'] = [re.findall(r'following_count\': (\d*)', x)[0] for x in df['user.public_metrics']]
+
+df['user.tweet_count'] = [re.findall(r'tweet_count\': (\d*)', x)[0] for x in df['user.public_metrics']]
+
+df['user.listed_count'] = [re.findall(r'listed_count\': (\d*)', x)[0] for x in df['user.public_metrics']]
+```
 
 ## 3.4 Integrate Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
