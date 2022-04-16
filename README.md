@@ -663,16 +663,63 @@ Although the 3 principal components explain only 20% of the variance. and 2 prin
 
 
 PCA of the clusters in 2d
-![image](https://user-images.githubusercontent.com/59128920/163669223-47730764-91cd-4d03-9e7c-16fdc2bfc148.png)
+![image](https://user-images.githubusercontent.com/59128920/163670310-a303ca6a-6dc9-466a-b959-cbd303d32a97.png)
 
 PCA of the clusters in 3d
 ![image](https://user-images.githubusercontent.com/59128920/163670058-6eb3e755-f07e-419f-a755-508d0cc5f7a5.png)
 
-Unfortunately we can't 
+**Centorid and the distance from it**
+Unfortunately we can't visualise all 384 dimensions of the space. But we can calculate the centroids of the clusters and find the closest Tweets (the most representative of the cluster)
+
+Code for getting the clusters and respective centroids.
+```python
+## Import libraries
+from nltk.cluster import KMeansClusterer
+import nltk
+
+import numpy as np
+from scipy.spatial import distance_matrix
+
+def clustering_question(data,NUM_CLUSTERS = 6):
+
+    sentences = data['tweet.text']
+
+    X = np.array(data['embeddings'].tolist())
+
+    kclusterer = KMeansClusterer(
+        NUM_CLUSTERS, distance=nltk.cluster.util.cosine_distance,
+        repeats=25,avoid_empty_clusters=True)
+
+    assigned_clusters = kclusterer.cluster(X, assign_clusters=True)
+
+    data['cluster'] = pd.Series(assigned_clusters, index=data.index)
+    data['centroid'] = data['cluster'].apply(lambda x: kclusterer.means()[x])
+
+    return data, assigned_clusters
+
+clustering_question(tweets, 6)
+```
+
+Code for calculating the distance
+
+```python
+# calculating the distance from te centroid to find the most representative sentences
+def distance_from_centroid(row):
+    # type of emb and centroid is different, hence using tolist below
+    return distance_matrix([row['embeddings']], [row['centroid'].tolist()])[0][0]
 
 
+# Compute centroid distance to the data
+tweets['distance_from_centroid'] = tweets.apply(distance_from_centroid, axis=1)
+```
+
+**Sort tweets by the least distance frrom the centroid**
+
+Even at a glance we can see that closer embeddings are more relevant.
+![image](https://user-images.githubusercontent.com/59128920/163670525-21d0b96b-5621-4862-a3bf-21a5a36b7e31.png)
 
 
+This information will allows us to extract customer insights from large ammounts of data to drive business insights and recommendations.
 
 
 ## 4.2 Generate Test Design [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
