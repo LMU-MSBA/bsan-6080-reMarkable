@@ -523,7 +523,7 @@ def lemmatizer(string):
 
 This task includes additional data preparation operations such as producing derived attributes,
 completing new records, and/or transforming/normalizing values. As mentioned above, when selecting the data for our model, we especially found the 
-‘tweet.public_metrics’ and ‘user.public_metrics’ to be criticlal for our analysis. With the code below you can see how we were able to extract retweet, reply, and like metrics for each tweet. Additionally, we had the ability to find user information including their following count, how many accounts they follow, and tweets they have posted.
+‘tweet.public_metrics’ and ‘user.public_metrics’ to be critical for our analysis. With the code below you can see how we were able to extract retweet, reply, and like metrics for each tweet. Additionally, we had the ability to find user information including their following count, how many accounts they follow, and tweets they have posted.
 
 ```ruby
 # get retweet, reply and like count from tweet.public_metrics 
