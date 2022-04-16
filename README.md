@@ -631,6 +631,30 @@ tweets.insert(1, "embeddings", column_to_move)
 
 # Modeling Phase
 ## 4.1 Selecting Modeling Techniquies [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
+Our main selected technique is K-mean clustering.
+
+**A high-level overview of the process**
+
+1. BERT for sentence embedding
+2. K-means clustering
+3. Calculate the centroid and sort the tweets by the distance from the centroid of the cluster.
+
+**Modeling Assumptions**
+
+1. We assume that BERT sentence embeddings adequately represent the meanings of the Tweets.
+2. We assume that the Tweets that are embedded closest to the centroid of the cluster are the most representative of the cluster. This is important because it allows us to read only **a few Tweets** from each cluster and **quickly extract insights from a large number of Tweets** if needed.
+
+**Code snippets and results
+
+To decide on the number of clusters we use a combination of **quantitative techniques such as elbow plot and dendrogram** and **human judgement** of the quality of the clusters. Since we are clustering text (unstructured data) it's importnant to make sure that the clusters and the number of **clusters make sense not only mathematically**.
+
+Elbow plot
+![image](https://user-images.githubusercontent.com/59128920/163669073-1c650b81-dcc8-49b4-b728-2bace53ea759.png)
+
+Dendogram
+![image](https://user-images.githubusercontent.com/59128920/163669074-4813740c-8951-4405-a123-02bdc76e640a.png)
+
+
 
 
 ## 4.2 Generate Test Design [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
