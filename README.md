@@ -613,6 +613,22 @@ print(corpus_embeddings[0:5])
     
 ```
 
+We make sure to preserve all of the data about the Tweets by inlcuding the embeddings into the original DataFrame. The result is a csv file that is ready for further analysis.
+
+```python
+# add the embeddings column to the dataset
+tweets['embeddings'] = list(corpus_embeddings)
+
+# move the column to the beginning for ease of use
+column_to_move = tweets.pop("embeddings")
+
+# insert column with insert(location, column_name, column_value)
+tweets.insert(1, "embeddings", column_to_move)
+```
+
+![image](https://user-images.githubusercontent.com/59128920/163668571-4e73acab-2fcf-48b5-baad-c7e09e7b6b6b.png)
+
+
 # Modeling Phase
 ## 4.1 Selecting Modeling Techniquies [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
