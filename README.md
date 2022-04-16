@@ -649,10 +649,28 @@ Our main selected technique is K-mean clustering.
 To decide on the number of clusters we use a combination of **quantitative techniques such as elbow plot and dendrogram** and **human judgement** of the quality of the clusters. Since we are clustering text (unstructured data) it's importnant to make sure that the clusters and the number of **clusters make sense not only mathematically**.
 
 Elbow plot
-![image](https://user-images.githubusercontent.com/59128920/163669073-1c650b81-dcc8-49b4-b728-2bace53ea759.png)
+![image](https://user-images.githubusercontent.com/59128920/163669172-839d2f06-6234-4a16-a565-d70fa69dc83b.png)
+
 
 Dendogram
-![image](https://user-images.githubusercontent.com/59128920/163669074-4813740c-8951-4405-a123-02bdc76e640a.png)
+![image](https://user-images.githubusercontent.com/59128920/163669180-6ff12da3-a2b8-4d6a-97d3-2f06a03e96dc.png)
+
+PCA for dimensionality reduction and intuitive visualisation.
+
+Although the 3 principal components explain only 20% of the variance. and 2 principal components explain only 16% of the variance.  The cluster visualisation provides a more intuitive understanding of the distibution of the clusters. 
+
+![image](https://user-images.githubusercontent.com/59128920/163670024-e14f2dc6-3ba7-4c83-a10f-c92059646b4b.png)
+
+
+PCA of the clusters in 2d
+![image](https://user-images.githubusercontent.com/59128920/163669223-47730764-91cd-4d03-9e7c-16fdc2bfc148.png)
+
+PCA of the clusters in 3d
+![image](https://user-images.githubusercontent.com/59128920/163670058-6eb3e755-f07e-419f-a755-508d0cc5f7a5.png)
+
+Unfortunately we can't 
+
+
 
 
 
