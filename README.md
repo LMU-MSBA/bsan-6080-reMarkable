@@ -644,7 +644,7 @@ Our main selected technique is K-mean clustering.
 1. We assume that BERT sentence embeddings adequately represent the meanings of the Tweets.
 2. We assume that the Tweets that are embedded closest to the centroid of the cluster are the most representative of the cluster. This is important because it allows us to read only **a few Tweets** from each cluster and **quickly extract insights from a large number of Tweets** if needed.
 
-**Code snippets and results
+**Code snippets and results**
 
 To decide on the number of clusters we use a combination of **quantitative techniques such as elbow plot and dendrogram** and **human judgement** of the quality of the clusters. Since we are clustering text (unstructured data) it's importnant to make sure that the clusters and the number of **clusters make sense not only mathematically**.
 
@@ -657,7 +657,7 @@ Dendogram
 
 PCA for dimensionality reduction and intuitive visualisation.
 
-Although the 3 principal components explain only 20% of the variance. and 2 principal components explain only 16% of the variance.  The cluster visualisation provides a more intuitive understanding of the distibution of the clusters. 
+Although the 3 principal components explain only 20% of the variance and 2 principal components explain only 16% of the variance.  The cluster visualisation provides a more intuitive understanding of the distibution of the clusters. 
 
 ![image](https://user-images.githubusercontent.com/59128920/163670024-e14f2dc6-3ba7-4c83-a10f-c92059646b4b.png)
 
@@ -719,7 +719,7 @@ Even at a glance we can see that closer embeddings are more relevant.
 ![image](https://user-images.githubusercontent.com/59128920/163670525-21d0b96b-5621-4862-a3bf-21a5a36b7e31.png)
 
 
-This information will allows us to extract customer insights from large ammounts of data to drive business insights and recommendations.
+This information allows us to extract customer insights from large ammounts of data to drive business insights and recommendations.
 
 
 ## 4.2 Generate Test Design [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
