@@ -523,7 +523,7 @@ def lemmatizer(string):
 
 This task includes additional data preparation operations such as producing derived attributes,
 completing new records, and/or transforming/normalizing values. As mentioned above, when selecting the data for our model, we especially found the 
-‘tweet.public_metrics’ and ‘user.public_metrics’ to be critical for our analysis. With the code below you can see how we were able to extract retweet, reply, and like metrics for each tweet. Additionally, we had the ability to find user information including their following count, how many accounts they follow, and tweets they have posted.
+‘tweet.public_metrics’ and ‘user.public_metrics’ to be critical for our analysis. With the code below you can see how we were able to extract retweet, reply, and like metrics for each tweet. Additionally, we had the ability to find user information including their following count, how many accounts they follow, and tweets they have posted. Derived attributes created include 'tweet.retweet_count', 'tweet.reply_count', 'tweet.like_count', 'tweet.quote_count', 'user.followers_count', 'user.following_count', 'user.tweet_count', and 'user.listed_count'.
 
 ```ruby
 # get retweet, reply and like count from tweet.public_metrics 
@@ -543,10 +543,31 @@ df['user.following_count'] = [re.findall(r'following_count\': (\d*)', x)[0] for 
 df['user.tweet_count'] = [re.findall(r'tweet_count\': (\d*)', x)[0] for x in df['user.public_metrics']]
 
 df['user.listed_count'] = [re.findall(r'listed_count\': (\d*)', x)[0] for x in df['user.public_metrics']]
+
 ```
+
+Additionally, for our model we created polarity and subjectivity features for sentiment analysis on the tweets. Utilizing the code below we had the ability to create two new features:
+
+```ruby
+# sentiment analysis
+def detect_sentiment(text):
+    blob = TextBlob(text)
+    return blob.sentiment.polarity
+
+def detect_subjectivity(text):
+    blob = TextBlob(text)
+    return blob.sentiment.subjectivity
+
+# create new columns for polarity and subjectivity of the reviews
+df['polarity'] = df['tweet.text'].apply(detect_sentiment)
+df['subjectivity'] = df['tweet.text'].apply(detect_subjectivity)
+```
+
+Lastly, there was no need to generate records and/or normalize values for our model.
 
 ## 3.4 Integrate Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
+All data used in our model came from one dataset/source, so there was no need for joins or merging of tables!
 
 ## 3.5 Format Data [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
