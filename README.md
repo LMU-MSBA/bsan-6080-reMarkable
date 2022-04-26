@@ -744,10 +744,115 @@ This information allows us to extract customer insights from large ammounts of d
 
 
 ## 4.2 Generate Test Design [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
- 
 We do not need to generate a test design for our project since we will be using the K-means clustering model. The training phase for K-nearest neighborhood (kNN) classification is faster than other classification algorithms, so there is no need to train the model for generalization. kNN does not need training since it relies on observable data similarities and distance metrics to generate predictions. This theory means the model assumes similar things exist in close proximity to each other in the feature space; it makes predictions based on objects in the clusters.  
 
 ## 4.3 Build Model [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
+As stated in section 4.1, our group will build a kNN model for the project. This section will build on the kNN model presented in section 4.1. Instead of using 6 clusters, we will test the model using 10, 15, and 25 clusters. 
+
+**The code we used to define the kNN model using 10 clusters. The same piece of code is also used for 15 and 25 clusters.**
+
+### Using 10 clusters.
+
+```
+def clustering_tweets(data,NUM_CLUSTERS = 10):
+
+    sentences = data['tweet.text']
+
+    X = np.array(data['embeddings'].tolist())
+
+    kclusterer = KMeansClusterer(
+        NUM_CLUSTERS, distance=nltk.cluster.util.cosine_distance,
+        repeats=25,avoid_empty_clusters=True)
+
+    assigned_clusters = kclusterer.cluster(X, assign_clusters=True)
+
+    data['cluster'] = pd.Series(assigned_clusters, index=data.index)
+    data['centroid'] = data['cluster'].apply(lambda x: kclusterer.means()[x])
+
+    return data, assigned_clusters
+
+clustering_tweets(tweets, 10)
+
+
+
+tweets.head()
+```
+
+**PC2 of 10 clusters in 2D.**
+
+<img width="395" alt="Screen Shot 2022-04-25 at 7 15 41 PM" src="https://user-images.githubusercontent.com/61371423/165240060-6aa94b90-b426-4bfc-9751-408835f484c2.png">
+
+
+**Code for calculating distance from the centroid to find the most representative sentences and sort the tweets by distance from centroid.**
+
+```
+# calculating the distance from te centroid to find the most representative sentences
+def distance_from_centroid(row):
+    # type of emb and centroid is different, hence using tolist below
+    return distance_matrix([row['embeddings']], [row['centroid'].tolist()])[0][0]
+
+
+# Compute centroid distance to the data
+tweets['distance_from_centroid'] = tweets.apply(distance_from_centroid, axis=1)
+
+sorted_tweets_10 = tweets.sort_values(by = ['cluster', 'distance_from_centroid'])[['tweet.text', 'cluster', 'distance_from_centroid']]
+```
+
+**Result of sorted_tweets_10.**
+
+<img width="641" alt="Screen Shot 2022-04-25 at 7 16 36 PM" src="https://user-images.githubusercontent.com/61371423/165240174-c5448d1f-f3da-4e24-86a2-49ced10ca6d7.png">
+
+**Code to show top three tweets from each cluster.**
+
+```
+# show top 3 from each cluster
+top_tweets = []
+n_clusters = sorted_tweets_10.cluster.max()+1
+#print(n_clusters)
+
+for cluster in range(n_clusters):
+  #print(cluster)
+  for top in range(3):
+    top_tweets.append(sorted_tweets_10[sorted_tweets_10['cluster']==cluster].iloc[top,:])
+    #print(sorted_tweets[sorted_tweets['cluster']==cluster].iloc[top,:])
+  
+top_tweets = pd.DataFrame(top_tweets)
+top_tweets
+```
+
+**This screenshot only shows the top three tweets in three clusters. The results show top three tweets for all clusters.**
+
+<img width="711" alt="Screen Shot 2022-04-25 at 10 56 25 PM" src="https://user-images.githubusercontent.com/61371423/165240662-3633c704-3035-42b9-b239-7e6a474595ad.png">
+
+
+### Using 15 clusters.
+
+**PC2 of 15 clusters in 2D.**
+
+<img width="399" alt="Screen Shot 2022-04-25 at 7 18 33 PM" src="https://user-images.githubusercontent.com/61371423/165241107-dbb1d492-3235-48dd-b3f9-ce906d2742ff.png">
+
+
+
+**Result of sorted_tweets_15.**
+
+<img width="675" alt="Screen Shot 2022-04-25 at 10 58 06 PM" src="https://user-images.githubusercontent.com/61371423/165241196-fb6e482f-943e-476a-a8e0-9f92887617ad.png">
+
+**Top three tweets in each cluster of fifteen clusters.**
+
+<img width="651" alt="Screen Shot 2022-04-25 at 10 59 19 PM" src="https://user-images.githubusercontent.com/61371423/165241374-297c8633-eaf7-4ffd-b6bc-992aab5838e5.png">
+
+### Using 25 clusters.
+
+
+**PC2 of 15 clusters in 2D.**
+
+<img width="398" alt="Screen Shot 2022-04-25 at 11 08 06 PM" src="https://user-images.githubusercontent.com/61371423/165241745-f5b8fac4-0234-4dd6-bbb1-3195b6b0c031.png">
+
+**Result of sorted_tweets_25.**
+
+<img width="656" alt="Screen Shot 2022-04-25 at 11 09 44 PM" src="https://user-images.githubusercontent.com/61371423/165241838-54ba17e1-583f-4b7d-9119-69ae02b1dd23.png">
+
+**Can not produce results to display top three tweets for kNN model with 25 clusters since the index is out of bounds. This error means that the the model is trying to use memory that is beyond the scope of the index.**
 
 
 ## 4.4 Assess Model [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
