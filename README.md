@@ -744,7 +744,8 @@ This information allows us to extract customer insights from large ammounts of d
 
 
 ## 4.2 Generate Test Design [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
-
+ 
+We do not need to generate a test design for our project since we will be using the K-means clustering model. The training phase for K-nearest neighborhood (kNN) classification is faster than other classification algorithms, so there is no need to train the model for generalization. kNN does not need training since it relies on observable data similarities and distance metrics to generate predictions. This theory means the model assumes similar things exist in close proximity to each other in the feature space; it makes predictions based on objects in the clusters.  
 
 ## 4.3 Build Model [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
