@@ -874,7 +874,8 @@ Once this line of code was fine tuned to sort out the tweets with negative senti
 
 ![image](https://user-images.githubusercontent.com/78009006/165477563-f2c05611-5b0b-4ddf-9842-16c75bc043ac.png)
 
-Once we ran the model, we were able to generate valuable insight. 
+Once we ran the model, we were able to generate valuable insight from the mined data. Below is a table listing the top three tweets from each cluster. The two main areas of focus, based on our findings, need to be improved customer support and accurate/more efficient delivery of our product.
+
 
 
 |index  |tweet.text	    |cluster	       |distance_from_centroid|
@@ -883,8 +884,8 @@ Once we ran the model, we were able to generate valuable insight.
 |83|	i have a serious "i want it now" problem. i don't like waiting. when you spend that kinda money on a product you expect a little more promptness in shipping. the delay in shipping is making me want to cancel the order. ugh	|0|	0.6822079327264841|
 |182|	neil, i'm thinking about charging it back as well. it makes me sad because i love but right now their lack of response is all that's remarkable. :( i suppose i'll charge it back and then order another ugh. this feels bad.	|0|	0.794111177608954|
 |221|	i recieved a disappointing email from regarding the delayed shipping of my remarkable2. i was given a rather vague eta of 'the next few weeks' for the price of this product i'd expect better.	|1|	0.5342823665889028|
-|152|	issues with my remarkable2. contacted customer support. seem to be stuck in an endless loop with them being incredibly unhelpful. it seems as if other customers have had similar problems. terrible customer service.	|1|	|0.5767891746511663|
-|251|	so my remarkable2 is expected to ship in a couple of days. been waiting since may.. let us see what is the fuss is all about	|1|	|0.5637665744285064|
+|152|	issues with my remarkable2. contacted customer support. seem to be stuck in an endless loop with them being incredibly unhelpful. it seems as if other customers have had similar problems. terrible customer service.	|1|	0.5767891746511663|
+|251|	so my remarkable2 is expected to ship in a couple of days. been waiting since may.. let us see what is the fuss is all about	|1|	0.5637665744285064|
 |86|	is a terrible product - it was delivered damaged, and customer support refused to take it back or exchange it.	|2|	0.13148246188652704|
 |87|	is a terrible product - it was delivered damaged, and customer support refused to take it back or exchange it.	|2|	0.13148246188652704|
 |88|	is a terrible product - it was delivered damaged, and customer support refused to take it back or exchange it.	|2|	0.13148246188652704|
@@ -894,7 +895,6 @@ Once we ran the model, we were able to generate valuable insight.
 |230|	surprise surprise! the boox note air has my deep guide hardly going back to his no point buying pretty device with the shit software and customer service.	|4|	0.29067039707654485|
 |231|	surprise surprise! the boox note air has my deep guide hardly going back to his no point buying pretty device with the shit software and customer service.	|4|	0.29067039707654485|
 |233|	surprise surprise! the boox note air has my deep guide hardly going back to his no point buying pretty device with the shit software and customer service.	|4|	0.29067039707654485|
-![image](https://user-images.githubusercontent.com/78009006/165479786-c53b3259-6786-47f6-bf52-8b8e1d7912ef.png)
 
 
 ## 5.2 Review Process [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
