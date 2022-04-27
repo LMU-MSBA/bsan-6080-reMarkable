@@ -874,7 +874,7 @@ Once this line of code was fine tuned to sort out the tweets with negative senti
 
 ![image](https://user-images.githubusercontent.com/78009006/165477563-f2c05611-5b0b-4ddf-9842-16c75bc043ac.png)
 
-Once we ran the model, we were able to generate valuable insight from the mined data. Below is a table listing the top three tweets from each cluster. The two main areas of focus, based on our findings, need to be improved customer support and accurate/more efficient delivery of our product.
+Once we ran the model, we were able to generate valuable insight from the mined data. Below is a table listing the top three tweets from each cluster. The two main areas of focus, based on our findings, need to be improved customer support and accurate/more efficient delivery of our product. It makes sense that some aspects of selling a product are out of our control such as the occasional defective item. However the manner in which we handle the resolution of said issue makes all the difference. In today's day-and-age instant gratification is the norm. The faster a tablet gets to our customer, the better the purchasing experience will be. 
 
 
 
