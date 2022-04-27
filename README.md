@@ -856,10 +856,45 @@ top_tweets
 
 
 ## 4.4 Assess Model [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
+One of our data mining success criteria was to ensure that we were able to use the mined data to run models, which in our case was met. In a technical sense, we are able to use the mined data to run models in an effort to inform our business objective of incresaing sales. The data we obtained is usable as valid input into the models we created. In the previous step, we tested the model with 6, 10, 15, and 25 clusters. 
+The models featuring 6, 10, and 15 clusters ran properly and the findings pointed out similar ideas within the clusters. In terms of quality, increasing the number of clusters did not prove beneficial, since the same remarks were being repeated across clusters. And the model with 25 clusters gave us a run error since the index was out of bounds. Therefore we conclude that the lower amount of clusters is the best model. This was also backed up by taking into account the results of our elbow for k-means clustering graph, which pointed to a lower number of clusters. 
 
 
 # Evaluation Phase
 ## 5.1 Evaluate Results [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
+Upon further review of the original models, we have found that we started with the incorrect segment of data/tweets. We sorted out the tweets containing positive tweets and used those reviews to shape our models. Although informative in determining what our customers are satisfied with, the findings did not inform our business objective of finding flaws/pain-points which could be improved upon to drive up sales. 
+
+```
+# select only negative reviews to identify the problems
+tweets = tweets[tweets['polarity'] < 0]
+tweets.shape
+```
+
+Once this line of code was fine tuned to sort out the tweets with negative sentiment, we re-ran the models again and using the elbow for kmeans clustering function, determined that the more appropriate number of clusters was 5.
+
+![image](https://user-images.githubusercontent.com/78009006/165477563-f2c05611-5b0b-4ddf-9842-16c75bc043ac.png)
+
+Once we ran the model, we were able to generate valuable insight. 
+
+
+|index  |tweet.text	    |cluster	       |distance_from_centroid|
+|-------|-------------------|------------------|--------------------------------|
+|225|	back in june, when i felt the need for something to look forward to, and was surrounded by post-its and burning through notebooks at a crazy rate, i ordered a as a present to myself. it's finally arriving on tuesday. i'm expecting instant productivity nirvana obvs.	|0|	0.7479107615766468|
+|83|	i have a serious "i want it now" problem. i don't like waiting. when you spend that kinda money on a product you expect a little more promptness in shipping. the delay in shipping is making me want to cancel the order. ugh	|0|	0.6822079327264841|
+|182|	neil, i'm thinking about charging it back as well. it makes me sad because i love but right now their lack of response is all that's remarkable. :( i suppose i'll charge it back and then order another ugh. this feels bad.	|0|	0.794111177608954|
+|221|	i recieved a disappointing email from regarding the delayed shipping of my remarkable2. i was given a rather vague eta of 'the next few weeks' for the price of this product i'd expect better.	|1|	0.5342823665889028|
+|152|	issues with my remarkable2. contacted customer support. seem to be stuck in an endless loop with them being incredibly unhelpful. it seems as if other customers have had similar problems. terrible customer service.	|1|	|0.5767891746511663|
+|251|	so my remarkable2 is expected to ship in a couple of days. been waiting since may.. let us see what is the fuss is all about	|1|	|0.5637665744285064|
+|86|	is a terrible product - it was delivered damaged, and customer support refused to take it back or exchange it.	|2|	0.13148246188652704|
+|87|	is a terrible product - it was delivered damaged, and customer support refused to take it back or exchange it.	|2|	0.13148246188652704|
+|88|	is a terrible product - it was delivered damaged, and customer support refused to take it back or exchange it.	|2|	0.13148246188652704|
+|69|	6 weeks awaiting a refund, ignored support requests, bad product even worse service and reputation is worthless	|3|	0.681137409810351|
+|227|	their customer service really sucks. they sent me a faulty product so i raised a support request as soon as i opened my still no response at all.	|3|	0.6910516746026814|
+|38|	unacceptable to have no live customer service. got tablet for wife for xmas, completely defective. tried processing return, which was rejected for an unexplained reason after 4 days. told to contact tech support, now supposed to wait another 24 hours for response	|3|	0.6956269819853677|
+|230|	surprise surprise! the boox note air has my deep guide hardly going back to his no point buying pretty device with the shit software and customer service.	|4|	0.29067039707654485|
+|231|	surprise surprise! the boox note air has my deep guide hardly going back to his no point buying pretty device with the shit software and customer service.	|4|	0.29067039707654485|
+|233|	surprise surprise! the boox note air has my deep guide hardly going back to his no point buying pretty device with the shit software and customer service.	|4|	0.29067039707654485|
+![image](https://user-images.githubusercontent.com/78009006/165479786-c53b3259-6786-47f6-bf52-8b8e1d7912ef.png)
 
 
 ## 5.2 Review Process [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
