@@ -898,6 +898,21 @@ Once we ran the model, we were able to generate valuable insight from the mined 
 
 
 ## 5.2 Review Process [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
+At this point, the resulting models appear to be satisfactory and satisfies the needs so far, in order to achieve our goal of increasing sales. Our high level overview of the process consists of Bert for sentence embedding, K-means clustering, and calculate the centroid and sort thr tweets by distance from the centroid of the cluster. Now that we are able to collect the top three tweets for each of the clusters we have, we can use this information to understand what people think about our product. This data will allow us to identify our strengths, and keep building on them, as well as making adjustments for our weaknesses.
+
+The quality of our models are satisfactory since we are able to draw valuable information. The attributes that we used were "tweet.public_metriccs" and "user.public_metrics". These attributes contains values such as likes, retweets, replies, following count and follower counts. The attributes are available for future analyses as well. 
+
+There are some activities and tasks that has been overlooked that is important to identify:
+- Discussion with Business Stakeholders
+- Obtain some revenue data from reMarkable
+- Not able to get useful review data
+- Obtain information on reviews from other sources, e.g. blogposts
 
 
 ## 5.3 Determine Next Steps [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
+
+The next steps for our project will build on the tasks that were overlooked previously. We just got ahold of the VP of Marketing from reMarkable, who has been a part of the team for a very long time. Being able to get in touch with him could help us with some insights, and hopefully give us extended clarity on the deployment. We were told that he cannot go too into details about the future business plan, but that he will be able to give his feedback and perhaps some tips before our deployment. 
+
+List of future actions will be:
+- Discuss with Sigurd Gran-Jansen (VP of Marketing), to hopefully gain some insights before launching our deployment. Since we potentially have the ability to get in touch with him, it is an opportunity that we have to capitalize on.
+- Due to the challenge of obtaining useful review data, we need to collect more review data from other sources. If we can gather more data that can lead us to achieve our goal of increasing sales, it is something we can look into before finishing our project.
