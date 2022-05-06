@@ -928,6 +928,11 @@ List of future actions will be:
 # Deployment Phase [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 ## 6.1 Plan Deployment [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
+Our topic generation model would be deployed by the product development team as well as the marketing team, but it will also involve the new Twitter social media manager that we recommend reMarkable to hire. ReMarkable’s Twitter manager will reply to tweets to reMarkable on a daily basis. Once a week the Twitter manager will use Twitter API to get all the relating tweets from that week and put them through our model to generate topics. The top tweets of each topic will then be sent to the product development team and the marketing for them to gain insights into immediate customer feedback and respond. 
+We will measure the benefit of our model in different ways. In the short term, we will measure benefits by monitoring the customer service ticket count and satisfaction rate as well as the Twitter customer sentiment. And in the long run, we will measure the benefit by comparing the same period sales of reMarkable 3 to reMarkable 2. 
+One of the biggest issues we might encounter is that during the initial deployment we might not be able to obtain enough new tweets fast enough. It will take some time for reMarkable to establish a good Twitter presence that will encourage customers to provide feedback. 
+
+
 
 ## 6.2 Plan Monitoring & Maintenance [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
