@@ -924,17 +924,17 @@ List of future actions will be:
 - Due to the challenge of obtaining useful review data, we need to collect more review data from other sources. If we can gather more data that can lead us to achieve our goal of increasing sales, it is something we can look into before finishing our project.
 
 
-# Sprint 4:
-# Deployment Phase
-## 6.1 Plan Deployment
+# Sprint 4: [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
+# Deployment Phase [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
+## 6.1 Plan Deployment [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 
-## 6.2 Plan Monitoring & Maintenance
+## 6.2 Plan Monitoring & Maintenance [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 
-## 6.3 Product Final Report
+## 6.3 Product Final Report [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 [Here is the slides for the final presentation!](https://github.com/LMU-MSBA/bsan-6080-reMarkable/blob/main/reMarkable%20Presentation.pdf)
 
-## 6.4 Review Project
+## 6.4 Review Project [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
 
