@@ -30,6 +30,11 @@
 	* [5.1 Evaluate Results](https://github.com/LMU-MSBA/bsan-6080-reMarkable#51-evaluate-results-)
 	* [5.2 Review Process](https://github.com/LMU-MSBA/bsan-6080-reMarkable#52-review-process-)
 	* [5.3 Determine Next Steps](https://github.com/LMU-MSBA/bsan-6080-reMarkable#53-determine-next-steps-)
+* [6. Deployment Phase](https://github.com/LMU-MSBA/bsan-6080-reMarkable#evaluation-phase)
+	* [6.1 Plan Deployment](https://github.com/LMU-MSBA/bsan-6080-reMarkable#51-evaluate-results-)
+	* [6.2 Plan Monitoring & Maintenance](https://github.com/LMU-MSBA/bsan-6080-reMarkable#52-review-process-)
+	* [6.3 Product Final Report](https://github.com/LMU-MSBA/bsan-6080-reMarkable#53-determine-next-steps-)
+	* [6.4 Review Project](https://github.com/LMU-MSBA/bsan-6080-reMarkable#53-determine-next-steps-)
 
 # Sprint 1: 
 # Business Understanding Phase
@@ -916,3 +921,18 @@ The next steps for our project will build on the tasks that were overlooked prev
 List of future actions will be:
 - Discuss with Sigurd Gran-Jansen (VP of Marketing), to hopefully gain some insights before launching our deployment. Since we potentially have the ability to get in touch with him, it is an opportunity that we have to capitalize on.
 - Due to the challenge of obtaining useful review data, we need to collect more review data from other sources. If we can gather more data that can lead us to achieve our goal of increasing sales, it is something we can look into before finishing our project.
+
+
+# Sprint 4:
+## 6.1 Plan Deployment
+
+
+## 6.2 Plan Monitoring & Maintenance
+
+
+## 6.3 Product Final Report
+
+
+## 6.4 Review Project
+
+
