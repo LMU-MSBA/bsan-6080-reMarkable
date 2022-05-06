@@ -933,7 +933,7 @@ List of future actions will be:
 
 
 ## 6.3 Product Final Report
-
+[Here is the slides for the final presentation!](https://github.com/LMU-MSBA/bsan-6080-reMarkable/blob/main/reMarkable%20Presentation.pdf)
 
 ## 6.4 Review Project
 
