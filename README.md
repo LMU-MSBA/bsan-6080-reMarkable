@@ -957,6 +957,19 @@ To monitor the use of the results we are going to track the number of views on t
 
 We also created dashboards that track relevant business KPIs alongside our recommendations to measure the benefits of our interventions. 
 
+Dashboard 1:
+
+https://public.tableau.com/app/profile/daniel.enciso/viz/ReMarkable_Sales_Dashboard/Sales_Dashboard?publish=yes
+
+
+Dashboard 2: 
+
+https://public.tableau.com/views/Combined_16516139118450/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+
+
+
+
+
 
 
 
