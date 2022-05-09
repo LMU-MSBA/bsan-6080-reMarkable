@@ -953,7 +953,7 @@ Each distinct knowledge or information result from our model is stored in a sepa
 The knowledge will be propagated to users through the final presentation and an interactive dashboard.
 
 
-To monitor the use of the results we are going to track the number of views on the dashboard and which department those views came from. 
+To monitor the use of the results we are going to track the number of views of the dashboard and which department those views came from. 
 
 We also created dashboards that track relevant business KPIs alongside our recommendations to measure the benefits of our interventions. 
 
