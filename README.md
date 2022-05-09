@@ -944,4 +944,8 @@ One of the biggest issues we might encounter is that during the initial deployme
 
 ## 6.4 Review Project [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
+Analyze the process
+
+As a group, it eas exciting to see our project develop and see what we could accomplish! We had the ability to extract UGC from Twitter on reMarkable2 to understand how user's view the product. From the beginning our team had to develop various skills as a group and learn how to work with each other. There was a constant need for commmunication as we were working on the various parts of the project. One of the most challenging parts of the project was ensuring everyone was on the same page as we had a larger group with 6 team members. With this, our team also had some advantages as we had multipe members with different strengths. Some were more tedchnical, some great with communication and project management. Overall, we had the ability to complete a project we are proud of and found insights that we believe useful to reMarkable.
+
 
