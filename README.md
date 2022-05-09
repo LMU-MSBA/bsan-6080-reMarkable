@@ -928,6 +928,23 @@ List of future actions will be:
 # Deployment Phase [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 ## 6.1 Plan Deployment [↑](https://github.com/LMU-MSBA/bsan-6080-reMarkable#table-of-content)
 
+For the final deployment of the model, we performed the following:
+
+1. Recollected all of the tweets that mention reMarkable2
+2. Cleaned the data
+3. Performed feature engineering
+4. Performed clustering and selected 3 top tweets for each cluster
+5. Identified the main topics, ranked them by importance, and provided details and actions to improve.
+6. Presented the findings both in a presentation and in a dashboard for the final users (decision-makers).
+
+As a result of the above, we were able to identify 20 topics: 10 with positive sentiment and 10 with negative sentiment. 
+We summarized our recommendations on a few most impactful topics. 
+
+
+
+
+
+
 Our topic generation model would be deployed by the product development team as well as the marketing team, but it will also involve the new Twitter social media manager that we recommend reMarkable to hire. ReMarkable’s Twitter manager will reply to tweets to reMarkable on a daily basis. Once a week the Twitter manager will use Twitter API to get all the relating tweets from that week and put them through our model to generate topics. The top tweets of each topic will then be sent to the product development team and the marketing for them to gain insights into immediate customer feedback and respond. The dashboards we developed are intended for the CEO and general manager. They will use the dashboard to monitor the overall brand perceptions, sales, returns, and customer service status. 
 
 We will measure the benefit of our model in different ways. In the short term, we will measure benefits by monitoring the customer service ticket count and satisfaction rate as well as the Twitter customer sentiment. And in the long run, we will measure the benefit by comparing the same period sales of reMarkable 3 to reMarkable 2. 
